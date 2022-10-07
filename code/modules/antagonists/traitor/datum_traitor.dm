@@ -25,6 +25,8 @@
 	///reference to the uplink this traitor was given, if they were.
 	var/datum/weakref/uplink_ref
 
+	var/datum/contractor_hub/contractor_hub
+
 	/// The uplink handler that this traitor belongs to.
 	var/datum/uplink_handler/uplink_handler
 
@@ -333,3 +335,33 @@
 	sword.worn_icon_state = "e_sword_on_red"
 
 	H.update_held_items()
+
+/datum/antagonist/traitor/proc/contractor_round_end()
+	var/result = ""
+	var/total_spent_rep = 0
+
+	var/completed_contracts = contractor_hub.contracts_completed
+	var/tc_total = contractor_hub.contract_TC_payed_out + contractor_hub.contract_TC_to_redeem
+
+	var/contractor_item_icons = "" // Icons of purchases
+	var/contractor_support_unit = "" // Set if they had a support unit - and shows appended to their contracts completed
+
+	/// Get all the icons/total cost for all our items bought
+	for (var/datum/contractor_item/contractor_purchase in contractor_hub.purchased_items)
+		contractor_item_icons += "<span class='tooltip_container'>\[ <i class=\"fas [contractor_purchase.item_icon]\"></i><span class='tooltip_hover'><b>[contractor_purchase.name] - [contractor_purchase.cost] Rep</b><br><br>[contractor_purchase.desc]</span> \]</span>"
+
+		total_spent_rep += contractor_purchase.cost
+
+	if (contractor_hub.purchased_items.len)
+		result += "<br>(used [total_spent_rep] Rep) "
+		result += contractor_item_icons
+	result += "<br>"
+	if (completed_contracts > 0)
+		var/pluralCheck = "contract"
+		if (completed_contracts > 1)
+			pluralCheck = "contracts"
+
+		result += "Completed [span_greentext("[completed_contracts]")] [pluralCheck] for a total of \
+					[span_greentext("[tc_total] TC")]![contractor_support_unit]<br>"
+
+	return result
