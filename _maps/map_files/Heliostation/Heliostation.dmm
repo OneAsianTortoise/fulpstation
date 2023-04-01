@@ -10768,7 +10768,7 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
-/obj/machinery/photocopier,
+/obj/effect/mob_spawn/ghost_role/human/tramconductor,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "aGT" = (
@@ -20117,10 +20117,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/poddoor/lift{
-	id = "tram1_helio";
-	name = "Tram Door"
-	},
 /turf/open/floor/iron/textured_half,
 /area/station/commons/lounge)
 "bmK" = (
@@ -21404,12 +21400,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
-"bqH" = (
-/obj/machinery/crossing_signal/tramstation/northwest{
-	id = "tram1_helio"
-	},
-/turf/open/floor/iron,
-/area/station/commons/lounge)
 "bqJ" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/iron,
@@ -21420,12 +21410,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/commons/fitness/recreation)
-"bqO" = (
-/obj/machinery/crossing_signal/tramstation/northeast{
-	tram_id = "tram1_helio"
-	},
-/turf/open/floor/iron,
-/area/station/commons/lounge)
 "bqP" = (
 /obj/effect/spawner/random/vending/snackvend,
 /turf/open/floor/iron,
@@ -23775,13 +23759,15 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "bzB" = (
-/obj/structure/sign/departments/evac{
-	pixel_x = -30
-	},
 /obj/machinery/light/directional/west,
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 1
+	},
+/obj/machinery/button/tram{
+	id = "right_part_helio";
+	lift_id = "tram1_helio";
+	pixel_x = -32
 	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
@@ -23964,16 +23950,6 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron,
 /area/station/commons/fitness/recreation)
-"bAk" = (
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/bar,
-/obj/machinery/crossing_signal/tramstation/southwest{
-	id = "tram1_helio"
-	},
-/turf/open/floor/iron,
-/area/station/service/bar)
 "bAl" = (
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -25349,9 +25325,6 @@
 /obj/structure/railing{
 	dir = 1;
 	layer = 3.1
-	},
-/obj/machinery/crossing_signal/tramstation/southwest{
-	id = "tram1_helio"
 	},
 /turf/open/floor/iron/textured_half,
 /area/station/hallway/secondary/exit/departure_lounge)
@@ -30571,17 +30544,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
-"cuq" = (
-/obj/machinery/door/firedoor,
-/obj/effect/turf_decal/caution{
-	dir = 1
-	},
-/obj/machinery/door/poddoor/lift{
-	id = "tram1_helio";
-	name = "Tram Door"
-	},
-/turf/open/floor/iron/textured_half,
-/area/station/commons/lounge)
 "cut" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -38593,16 +38555,6 @@
 /obj/structure/sign/warning/secure_area/directional/west,
 /turf/open/space/basic,
 /area/space/nearstation)
-"eEk" = (
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/obj/machinery/crossing_signal/tramstation/southeast{
-	id = "tram1_helio"
-	},
-/turf/open/floor/iron,
-/area/station/service/bar)
 "eEo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -45132,7 +45084,6 @@
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 1
 	},
-/obj/effect/mob_spawn/ghost_role/human/tramconductor,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "icq" = (
@@ -48777,18 +48728,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/station/engineering/atmos)
-"jXb" = (
-/obj/effect/turf_decal/caution{
-	dir = 8
-	},
-/obj/machinery/crossing_signal/tramstation/northwest{
-	id = "middle_part_helio";
-	tram_id = "tram2_helio"
-	},
-/turf/open/floor/iron/textured_half{
-	dir = 1
-	},
-/area/station/commons/lounge)
 "jXm" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 1
@@ -49931,16 +49870,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/small,
 /area/station/science/robotics/lab)
-"kFO" = (
-/obj/machinery/destination_sign/indicator{
-	lift_id = "tram1_helio"
-	},
-/obj/machinery/button/tram{
-	id = "left_part_helio";
-	lift_id = "tram1_helio"
-	},
-/turf/closed/wall,
-/area/station/hallway/secondary/entry)
 "kGK" = (
 /obj/structure/industrial_lift/tram/white,
 /obj/machinery/door/window/tram/heliotram2{
@@ -52776,16 +52705,6 @@
 /obj/effect/turf_decal/trimline/purple/corner,
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
-"mim" = (
-/obj/structure/railing{
-	dir = 1;
-	layer = 3.1
-	},
-/obj/machinery/crossing_signal/tramstation/southeast{
-	id = "tram1_helio"
-	},
-/turf/open/floor/iron/textured_half,
-/area/station/hallway/secondary/entry)
 "miN" = (
 /obj/machinery/rnd/production/techfab/department/service,
 /obj/effect/turf_decal/delivery,
@@ -55064,13 +54983,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
-"ntv" = (
-/obj/structure/railing,
-/obj/machinery/crossing_signal/tramstation/northeast{
-	id = "tram1_helio"
-	},
-/turf/open/floor/iron/textured_half,
-/area/station/hallway/secondary/entry)
 "nty" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/machinery/door/airlock/security{
@@ -66417,11 +66329,6 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/crossing_signal/tramstation/southwest{
-	lift_id = "tram2_helio";
-	id = "center_part_helio";
-	tram_id = "tram2_helio"
-	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
 	},
@@ -67483,8 +67390,10 @@
 "tSE" = (
 /obj/structure/cable,
 /obj/structure/railing,
-/obj/machinery/crossing_signal/tramstation/northwest{
-	id = "tram1_helio"
+/obj/machinery/button/tram{
+	id = "right_part_helio";
+	lift_id = "tram1_helio";
+	pixel_x = -32
 	},
 /turf/open/floor/iron/textured_half,
 /area/station/hallway/secondary/exit/departure_lounge)
@@ -69127,10 +69036,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
 "uQw" = (
-/obj/machinery/destination_sign/indicator{
-	dir = 1;
-	lift_id = "tram1_helio"
-	},
 /obj/machinery/button/tram{
 	id = "left_part_helio";
 	lift_id = "tram1_helio"
@@ -73054,11 +72959,6 @@
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/caution{
 	dir = 1
-	},
-/obj/machinery/door/poddoor/lift{
-	id = "tram1_helio";
-	name = "Tram Door";
-	lift_id = "tram1_helio"
 	},
 /turf/open/floor/iron/textured_half,
 /area/station/commons/lounge)
@@ -90650,7 +90550,7 @@ bvK
 bgD
 bgD
 wZV
-kFO
+uQw
 bgD
 xDE
 usa
@@ -91678,13 +91578,13 @@ azQ
 azQ
 bpo
 nis
-ntv
+qWa
 bgD
 bgD
 bTj
 bgD
 bvH
-mim
+hPF
 oxF
 bzY
 bxJ
@@ -104527,7 +104427,7 @@ bhf
 bmF
 bik
 bik
-bqH
+bik
 bly
 xQj
 qUM
@@ -105042,14 +104942,14 @@ fBB
 bik
 nxh
 bik
-cuq
+wRf
 jaV
 tKK
 xmH
 tKK
 qyu
 eEP
-bAk
+eoR
 eoR
 bHG
 eoR
@@ -106077,7 +105977,7 @@ qoK
 tKK
 gTU
 bxg
-eEk
+byx
 bAm
 bBM
 bDA
@@ -106327,7 +106227,7 @@ cIn
 bik
 bok
 bik
-cuq
+wRf
 jaV
 gLw
 qWx
@@ -106583,7 +106483,7 @@ bjR
 vYx
 bik
 bik
-bqO
+bik
 bly
 ebr
 eMa
@@ -107860,7 +107760,7 @@ trj
 rqx
 bhf
 rqx
-jXb
+rqx
 qsn
 qsn
 qsn

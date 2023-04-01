@@ -19,7 +19,7 @@
 
 /obj/effect/landmark/tram/right_part/heliotram1
 	specific_lift_id = HELIO_TRAM1
-	destination_id = "right_part_hilbert"
+	destination_id = "right_part_helio"
 	tgui_icons = list("Departures" = "plane-departure", "Medical" = "plus", "Science" = "flask")
 
 /obj/effect/landmark/lift_id/heliotram2
@@ -51,7 +51,7 @@
 	You must charge anyone who wants to transfer from vertical line to horizontal line, no matter who they are. \
 	Try your best to stop ticket evader, do not use any lethal method unless really necessary."
 	important_text = "Regardless of the circumstances, DO NOT abandon your workplace, the tram central station."
-	outfit = /datum/outfit/oldsec
+	outfit = /datum/outfit/tramconductor
 	spawner_job_path = /datum/job/ancient_crew
 
 /obj/effect/mob_spawn/ghost_role/human/tramconductor/Destroy()
