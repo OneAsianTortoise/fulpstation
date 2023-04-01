@@ -12136,6 +12136,7 @@
 "aLY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "aLZ" = (
@@ -21312,6 +21313,7 @@
 /area/station/maintenance/department/science)
 "bsB" = (
 /obj/effect/spawner/structure/window,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/plating,
 /area/station/hallway/primary/port)
 "bsC" = (
@@ -21559,6 +21561,7 @@
 /area/station/security/prison/visit)
 "btF" = (
 /obj/machinery/door/firedoor,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "btH" = (
@@ -21853,6 +21856,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/landmark/navigate_destination/dockarrival,
 /obj/structure/cable,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "buV" = (
@@ -21903,6 +21907,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "bvd" = (
@@ -25878,6 +25883,7 @@
 	dir = 4
 	},
 /obj/effect/spawner/structure/window,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/plating,
 /area/station/hallway/primary/port)
 "bOO" = (
@@ -29702,6 +29708,7 @@
 	density = 0;
 	name = "Horizontal Tram Controls"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "csU" = (
@@ -31061,6 +31068,9 @@
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
+	},
+/obj/structure/sign/collision_counter{
+	pixel_y = -32
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
@@ -39651,10 +39661,12 @@
 /turf/open/floor/iron/white,
 /area/station/medical/storage)
 "fHL" = (
+/obj/structure/sign/collision_counter{
+	pixel_x = 32
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/structure/sign/calendar/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "fHP" = (
@@ -44759,6 +44771,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/paper/guide/tram,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "ioT" = (
@@ -45839,7 +45852,6 @@
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 8
 	},
-/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "iTy" = (
@@ -50426,6 +50438,7 @@
 "lob" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "loo" = (
@@ -52563,6 +52576,9 @@
 /obj/item/clothing/under/rank/centcom/official,
 /obj/item/clothing/head/hats/centcom_cap,
 /obj/item/card/id/away/hotel/security,
+/obj/item/inducer,
+/obj/item/crowbar,
+/obj/item/crowbar,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "mrE" = (
@@ -53752,6 +53768,7 @@
 "mWD" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/caution,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron/textured_half,
 /area/station/hallway/secondary/exit/departure_lounge)
 "mWN" = (
@@ -63745,7 +63762,6 @@
 	name = "Transfer Station Blast Control";
 	req_access = list("away_sec")
 	},
-/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "sbw" = (
@@ -65288,6 +65304,11 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/wood,
 /area/station/maintenance/aft/lesser)
+"sSG" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/station/commons/lounge)
 "sSN" = (
 /obj/machinery/button/door/directional/west{
 	id = "xenobio1";
@@ -69136,7 +69157,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/commons/lounge)
 "uVT" = (
@@ -69523,19 +69543,17 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/bridge)
 "vdo" = (
+/obj/structure/cable,
 /obj/machinery/door/poddoor/preopen{
 	id = "trasnferblast";
 	name = "Trasnfer Station Blast Door"
 	},
-/obj/machinery/door/airlock/vault{
-	name = "Vault Door"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/away/security,
-/obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark,
+/obj/machinery/door/airlock/vault,
+/obj/effect/mapping_helpers/airlock/access/all/away/security,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/turf/open/floor/plating,
 /area/station/commons/lounge)
 "vds" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -105706,7 +105724,7 @@ rfn
 iTh
 fqA
 csS
-sms
+sSG
 ior
 rKi
 rJZ
