@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><base href="../"><link rel="stylesheet" href="dmdoc.css"><title>fulp_modules/tg_edits.md - /tg/ Station 13</title></head><body><header><a href="index.html">/tg/ Station 13</a> - <a href="index.html#modules">Modules</a> - <a href="index.html#types">Types</a></header><main><h1>fulp_modules/tg_edits.md <a href="https://github.com/OneAsianTortoise/fulpstation/blob/975d181ce4bf36419365f56adeb34077df1ac1b7/fulp_modules/tg_edits.md"><img src="git.png" width="16" height="16" title="fulp_modules/tg_edits.md"></a></h1><table class="summary" cellspacing="0"><tr><td colspan="2"><h2 id="list-of-all-tg-edits">List of all TG edits:</h2>
+<ul>
+<li>
+<p>.github/workflows/compile_changelogs.yml &gt; Same as above. //Not currently there, is this broken?</p>
+</li>
+<li>
+<p>code/datums/greyscale/_greyscale_config.dm &gt; Adds our greyscales folder to the sanity check</p>
+</li>
+<li>
+<p>code/game/area/areas/shuttles.dm &gt; Plays ApproachingFulp instead of ApproachingTG</p>
+</li>
+<li>
+<p>interface\interface.dm &gt; Changes the TG Changelog verb to a new path &amp; name.</p>
+</li>
+<li>
+<p>README.md &gt; Replaces it with our own readme</p>
+</li>
+<li>
+<p>tgui/packages/tgui/routes.tsx &gt; Add custom routing so fulp-specific interfaces can be found and loaded</p>
+</li>
+<li>
+<p>tgstation.dme &gt; Adds our files to be included when compiling</p>
+</li>
+<li>
+<p>tools/build/build.ts &gt; Adds our folder to be read for changes when compiling.</p>
+</li>
+<li>
+<p>tools/deploy.sh &gt; Adds Fulp's <code>icon</code> and <code>greyscale/json_configs</code> folders to the list of folders that RustG uses to compile icons.</p>
+</li>
+<li>
+<p>tools/pull_request_hooks/autoChangelog.js &gt; Changes changelog folder to fulp_modules/data/html/changelogs, to preserve them across TGUs.</p>
+</li>
+</ul>
+<h2 id="all-fulp-files-not-contained-within-fulp-modules">All Fulp files not contained within /fulp_modules/</h2>
+<ul>
+<li>
+<p>code/__DEFINES/fulp_defines &gt; Contains all of our defines</p>
+</li>
+<li>
+<p>_maps/fulp_maps/ &gt; Contains all of our non-station maps (Ruins, Deathmatch maps, etc.)</p>
+</li>
+<li>
+<p>tgui/packages/fulpui-patches &gt; Adds all Fulp TGUI files</p>
+</li>
+<li>
+<p>code/modules/unit_tests/screenshots &gt; Contains Fulp antag &amp; species screenshots for unit tests. This includes <strong>BUT IS NOT LIMITED TO</strong> the following:</p>
+</li>
+</ul>
+<ol>
+<li>screenshot_antag_icons_bloodsucker.png</li>
+<li>screenshot_antag_icons_bloodsuckerbreakout.png</li>
+<li>screenshot_antag_icons_infiltrator.png</li>
+<li>screenshot_antag_icons_monsterhunter.png</li>
+<li>screenshot_antag_icons_vampiricaccident.png</li>
+<li>screenshot_humanoids__datum_species_beefman.png</li>
+<li>screenshot_humanoids__datum_species_protogen.png</li>
+<li>screenshot_humanoids__datum_species_zombie_hecata.png</li>
+</ol>
+<h4 id="maps-shuttles">Maps &amp; Shuttles</h4>
+<ul>
+<li>_maps/map_files/Heliostation/Heliostation.dmm</li>
+<li>_maps/heliostation.json</li>
+<li>_maps/shuttles/arrival_helio.dmm</li>
+<li>_maps/shuttles/cargo_helio.dmm</li>
+<li>_maps/shuttles/emergency_helio.dmm</li>
+<li>_maps/shuttles/labour_helio.dmm</li>
+<li>_maps/map_files/SeleneStation/SeleneStation.dmm</li>
+<li>_maps/selenestation.json</li>
+<li>_maps/shuttles/arrival_selene.dmm</li>
+<li>_maps/shuttles/cargo_selene.dmm</li>
+<li>_maps/shuttles/emergency_selene.dmm</li>
+<li>_maps/shuttles/mining_selene.dmm</li>
+<li>_maps/shuttles/labour_selene.dmm</li>
+<li>_maps/map_files/PubbyStation/PubbyStation.dmm</li>
+<li>_maps/pubbystation.json</li>
+<li>_maps/map_files/TheiaStation/TheiaStation.dmm</li>
+<li>_maps/theiastation.json</li>
+<li>_maps/shuttles/arrival_fulp.dmm</li>
+<li>_maps/shuttles/cargo_fulp.dmm</li>
+<li>_maps/shuttles/emergency_theia.dmm</li>
+</ul>
+<h4 id="tgui">TGUI</h4>
+<ul>
+<li>tgui/packages/tgui/interfaces/PreferencesMenu/antagonists/antagonists/bloodsucker.ts</li>
+<li>tgui/packages/tgui/interfaces/PreferencesMenu/antagonists/antagonists/bloodsuckerbreakout.ts</li>
+<li>tgui/packages/tgui/interfaces/PreferencesMenu/antagonists/antagonists/ghostinfiltrator.ts</li>
+<li>tgui/packages/tgui/interfaces/PreferencesMenu/antagonists/antagonists/monsterhunter.ts</li>
+<li>tgui/packages/tgui/interfaces/PreferencesMenu/antagonists/antagonists/vampiricaccident.ts</li>
+<li>tgui/packages/tgui/interfaces/PreferencesMenu/preferences/features/game_preferences/antag_tips.tsx</li>
+<li>tgui/packages/tgui/interfaces/PreferencesMenu/preferences/features/fulp_species_features.tsx</li>
+</ul></td></tr></table></main><footer>tgstation.dme <a href="https://github.com/OneAsianTortoise/fulpstation/tree/975d181ce4bf36419365f56adeb34077df1ac1b7">975d181</a> (master) — <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.11.0</a></footer></body></html>
